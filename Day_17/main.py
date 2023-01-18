@@ -14,12 +14,12 @@ while True:
   player_two_selection = hiddenInput("What is your selection {0}? > ".format(player_two)).lower()
   
   if(player_one_selection not in valid_input):
-      print("{0} {1} is not a valid input".format(player_one,player_one_selection))
-      exit()
+      print("{0} {1} is not a valid input lets try again".format(player_one,player_one_selection))
+      continue
   
   if(player_two_selection not in valid_input):
-      print("{0} {1} is not a valid input".format(player_two,player_two_selection))
-      exit()
+      print("{0} {1} is not a valid input lets try again".format(player_two,player_two_selection))
+      continue
   
   if(player_one_selection == player_two_selection):
       print("Looks like you both tied!")
